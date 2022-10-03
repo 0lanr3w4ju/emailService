@@ -3,7 +3,7 @@ services:
     name: emailServicePro
     env: python
     buildCommand: "./build.sh"
-    startCommand: "gunicorn emailServicePro.wsgi:emailService"
+    startCommand: "gunicorn mysite.wsgi:application"
     envVars:
       - key: SECRET_KEY
         generateValue: true
