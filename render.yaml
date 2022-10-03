@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: emailServicePro
+    env: python
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn emailServicePro.wsgi:application"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: emailServicePro
+          property: ''
+      - key: SECRET_KEY
+        generateValue: true
+      - key: WEB_CONCURRENCY
+        value: 4
