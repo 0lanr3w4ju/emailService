@@ -26,15 +26,15 @@ environ.Env.read_env()
 SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-# DEBUG = False
+# DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['emailbackendservice.herokuapp.com', 'localhost']
 
 # Application definition
 
 INSTALLED_APPS = [
-    
+
     # 
     'django.contrib.admin',
     'django.contrib.auth',
