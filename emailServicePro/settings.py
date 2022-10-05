@@ -29,7 +29,7 @@ SECRET_KEY = env('SECRET_KEY')
 # DEBUG = True
 DEBUG = False
 
-ALLOWED_HOSTS = ['emailbackendservice.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['emailbackendservice.herokuapp.com', '127.0.0.1:3000']
 
 # Application definition
 
