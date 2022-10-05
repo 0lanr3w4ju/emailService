@@ -16,7 +16,7 @@ def send_mail_view(request, *args, **kwargs):
 
         send_mail(
             'CARLIE CLIENT FORM', 
-            f'Hi, {client_data["first_name"]} {client_data["last_name"]} is available on {client_data["available_date"]}',
+            f'Hi, {client_data["first_name"]} {client_data["last_name"]} is available on {client_data["available_date"]} and location is {client_data["service_loc"]}.',
             client_data["email"],
             ['olanr3wajualawode@gmail.com'],
             fail_silently=False
